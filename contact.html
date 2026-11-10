@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | RADJA Store</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header class="contact-header">
+        <a href="index.html" class="logo">RADJA<span>.</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html">Shop</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <a href="index.html" class="shop-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Shop Now
+        </a>
+    </header>
+    <section class="contact-hero">
+        <div class="hero-text">
+            <span>WE ARE HERE FOR YOU</span>
+            <h1>
+                Let's Talk <span>With Us.</span>
+            </h1>
+            <p>
+                Have a question or need assistance?
+                Get in touch with RADJA. We would love to hear from you.
+            </p>
+        </div>
+        <div class="hero-icon">
+            <i class="fa-solid fa-headset"></i>
+        </div>
+    </section>
+    <main class="contact-section">
+        <div class="contact-info">
+            <span class="section-label">CONTACT DETAILS</span>
+            <h2>Get In Touch</h2>
+            <p class="info-description">
+                You can contact our administration through
+                the following information and social media platforms.
+            </p>
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="contact-card-text">
+                    <h3>Phone Number</h3>
+                    <a href="tel:+213662727324">
+                        0662727324
+                    </a>
+                </div>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <div class="contact-card-text">
+                    <h3>Our Store</h3>
+                    <p>RADJA Online Store</p>
+                </div>
+            </div>
+            <div class="social-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=fr_FR" target="_blank" rel="noopener noreferrer"
+                        aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/coach_radja.fitness/?hl=fr" target="_blank"
+                        rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://capradja.beprime.site/admin/dashboard" target="_blank" rel="noopener noreferrer"
+                        aria-label="Admin Dashboard">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form-box">
+            <div class="form-heading">
+                <span class="section-label">SEND A MESSAGE</span>
+                <h2>How Can We Help?</h2>
+                <p>
+                    Fill out the form and prepare your message.
+                </p>
+            </div>
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Your email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" placeholder="What is your message about?" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="6" placeholder="Write your message here..." required></textarea>
+                </div>
+                <button type="submit" class="send-btn">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+                <p id="formMessage" class="form-message" role="status"></p>
+            </form>
+        </div>
+    </main>
+    <footer class="contact-footer">
+        <a href="index.html" class="logo">RADJA<span>.</span></a>
+        <p>© 2026 RADJA Store. All Rights Reserved.</p>
+        <a href="about.html">About Us</a>
+
+    </footer>
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const subject = document.getElementById("subject").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const formMessage = document.getElementById("formMessage");
+
+            if (!name || !email || !subject || !message) {
+                formMessage.textContent = "Please fill in all fields.";
+                formMessage.className = "form-message error";
+                return;
+            }
+
+            const adminEmail = "YOUR_EMAIL_HERE";
+
+            const mailSubject = encodeURIComponent(subject);
+
+            const mailBody = encodeURIComponent(
+                "Name: " + name +
+                "\nEmail: " + email +
+                "\n\nMessage:\n" + message
+            );
+
+            window.location.href =
+                "mailto:" + adminEmail +
+                "?subject=" + mailSubject +
+                "&body=" + mailBody;
+
+        });
+
+    </script>
+
+</body>
+
+</html>

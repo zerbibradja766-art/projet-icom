@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADJA | Blog</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="blog-header">
+    <a href="index.html" class="logo">RADJA<span>.</span></a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="about.html">About Us</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <a href="shop.html" class="header-btn">Shop Now</a>
+</header>
+
+<section class="blog-hero">
+    <div class="hero-content">
+        <span class="hero-label">RADJA FITNESS BLOG</span>
+        <h1>Inspiration For Your <span>Active Lifestyle.</span></h1>
+        <p>
+            Discover fitness tips, sports inspiration and useful guides
+            to help you live a healthier and more active life.
+        </p>
+        <a href="#articles" class="hero-btn">Explore Articles</a>
+    </div>
+</section>
+
+<main class="blog-container" id="articles">
+
+    <div class="section-heading">
+        <span>OUR BLOG</span>
+        <h2>Latest Articles</h2>
+        <p>Explore our latest tips and inspiration.</p>
+    </div>
+
+    <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search articles...">
+    </div>
+
+    <div class="categories">
+        <button class="category-btn active" data-category="all">All</button>
+        <button class="category-btn" data-category="fitness">Fitness Tips</button>
+        <button class="category-btn" data-category="sports">Sports & Style</button>
+        <button class="category-btn" data-category="guides">Product Guides</button>
+        <button class="category-btn" data-category="lifestyle">Healthy Lifestyle</button>
+    </div>
+
+    <div class="articles-grid" id="articlesGrid">
+
+        <article class="article-card" data-category="fitness">
+            <div class="article-image visual-fitness">
+                <span class="visual-symbol">🏋️</span>
+                <span class="article-category">Fitness Tips</span>
+            </div>
+            <div class="article-content">
+                <span class="article-date">Fitness • 5 min read</span>
+                <h3>5 Simple Ways to Stay Motivated at the Gym</h3>
+                <p>Discover simple habits that can help you enjoy your fitness journey.</p>
+                <button class="read-more"
+                    data-title="5 Simple Ways to Stay Motivated at the Gym"
+                    data-text="Staying motivated is an important part of your fitness journey. Start with realistic goals, choose activities you enjoy, create a routine, celebrate your progress and remember that consistency matters more than perfection.">
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+
+        <article class="article-card" data-category="sports">
+            <div class="article-image visual-sports">
+                <span class="visual-symbol">👟</span>
+                <span class="article-category">Sports & Style</span>
+            </div>
+            <div class="article-content">
+                <span class="article-date">Sports • 4 min read</span>
+                <h3>How to Choose Comfortable Sportswear</h3>
+                <p>Find out what to look for when choosing sports clothes.</p>
+                <button class="read-more"
+                    data-title="How to Choose Comfortable Sportswear"
+                    data-text="Comfort is essential when choosing sportswear. Look for breathable fabrics, comfortable fits and clothes that allow you to move freely. Choose items that suit your activity and personal preferences.">
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+
+        <article class="article-card" data-category="guides">
+            <div class="article-image visual-guides">
+                <span class="visual-symbol">🎒</span>
+                <span class="article-category">Product Guides</span>
+            </div>
+            <div class="article-content">
+                <span class="article-date">Guides • 6 min read</span>
+                <h3>Essential Accessories for Your Workout</h3>
+                <p>Discover useful accessories that can make your workouts easier.</p>
+                <button class="read-more"
+                    data-title="Essential Accessories for Your Workout"
+                    data-text="Some useful workout accessories include a water bottle, a gym bag, a comfortable towel and a suitable exercise mat. Choose accessories based on the type of activity you enjoy.">
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+
+        <article class="article-card" data-category="lifestyle">
+            <div class="article-image visual-lifestyle">
+                <span class="visual-symbol">🥗</span>
+                <span class="article-category">Healthy Lifestyle</span>
+            </div>
+            <div class="article-content">
+                <span class="article-date">Lifestyle • 5 min read</span>
+                <h3>Small Habits for a Healthier Lifestyle</h3>
+                <p>Simple everyday habits that support your general wellbeing.</p>
+                <button class="read-more"
+                    data-title="Small Habits for a Healthier Lifestyle"
+                    data-text="A balanced lifestyle can include drinking enough water, eating varied meals, getting sufficient rest and making time for enjoyable physical activities. Small, sustainable habits can make everyday life better.">
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+
+        <article class="article-card" data-category="fitness">
+            <div class="article-image visual-workout">
+                <span class="visual-symbol">🤸</span>
+                <span class="article-category">Fitness Tips</span>
+            </div>
+            <div class="article-content">
+                <span class="article-date">Fitness • 4 min read</span>
+                <h3>Why Warm-Ups Matter Before Exercise</h3>
+                <p>Learn why preparing your body is an important workout habit.</p>
+                <button class="read-more"
+                    data-title="Why Warm-Ups Matter Before Exercise"
+                    data-text="A warm-up gradually prepares your body for physical activity. Gentle movements and activity-specific preparation can help you transition comfortably into your workout.">
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+
+        <article class="article-card" data-category="guides">
+            <div class="article-image visual-equipment">
+                <span class="visual-symbol">🏃</span>
+                <span class="article-category">Product Guides</span>
+            </div>
+            <div class="article-content">
+                <span class="article-date">Guides • 5 min read</span>
+                <h3>Choosing the Right Equipment for Beginners</h3>
+                <p>A simple guide to getting started with basic sports equipment.</p>
+                <button class="read-more"
+                    data-title="Choosing the Right Equipment for Beginners"
+                    data-text="If you are starting a new activity, begin with basic equipment that suits your needs. Consider comfort, quality, ease of use and the type of exercise you plan to do.">
+                    Read More <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </article>
+
+    </div>
+
+    <p class="no-results" id="noResults">No articles found.</p>
+
+</main>
+
+<section class="newsletter">
+    <div>
+        <span>STAY CONNECTED</span>
+        <h2>Get Inspired With RADJA</h2>
+        <p>Discover new articles, tips and sports inspiration.</p>
+    </div>
+    <a href="contact.html" class="newsletter-btn">Contact Us</a>
+</section>
+
+<footer class="blog-footer">
+    <a href="index.html" class="logo">RADJA<span>.</span></a>
+    <p>Move Better. Live Better.</p>
+    <div class="footer-social">
+        <a href="https://www.facebook.com/?locale=fr_FR" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/coach_radja.fitness/?hl=fr" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <p class="copyright">© 2026 RADJA. All Rights Reserved.</p>
+</footer>
+
+<div class="article-modal" id="articleModal">
+    <div class="modal-content">
+        <button class="modal-close" id="closeModal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="modal-visual" id="modalVisual">
+            <span id="modalIcon">🏋️</span>
+        </div>
+
+        <div class="modal-text">
+            <span class="modal-label">RADJA BLOG</span>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDescription"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const searchInput = document.getElementById("searchInput");
+    const categoryButtons = document.querySelectorAll(".category-btn");
+    const articleCards = document.querySelectorAll(".article-card");
+    const noResults = document.getElementById("noResults");
+    let selectedCategory = "all";
+    function filterArticles() {
+        const searchValue = searchInput.value.toLowerCase().trim();
+        let visibleCount = 0;
+
+        articleCards.forEach(card => {
+            const category = card.dataset.category;
+            const text = card.innerText.toLowerCase();
+            const matchesCategory =
+                selectedCategory === "all" || category === selectedCategory;
+            const matchesSearch = text.includes(searchValue);
+
+            if (matchesCategory && matchesSearch) {
+                card.style.display = "block";
+                visibleCount++;
+            } else {
+                card.style.display = "none";
+            }
+        });
+        noResults.style.display = visibleCount === 0 ? "block" : "none";
+    }
+    categoryButtons.forEach(button => {
+        button.addEventListener("click", () => {
+            categoryButtons.forEach(btn => btn.classList.remove("active"));
+            button.classList.add("active");
+
+            selectedCategory = button.dataset.category;
+            filterArticles();
+        });
+    });
+
+    searchInput.addEventListener("input", filterArticles);
+    const articleModal = document.getElementById("articleModal");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalDescription = document.getElementById("modalDescription");
+    const modalVisual = document.getElementById("modalVisual");
+    const modalIcon = document.getElementById("modalIcon");
+    const closeModal = document.getElementById("closeModal");
+
+    document.querySelectorAll(".read-more").forEach(button => {
+        button.addEventListener("click", () => {
+            const card = button.closest(".article-card");
+            const visual = card.querySelector(".article-image");
+            const symbol = visual.querySelector(".visual-symbol");
+
+            modalTitle.textContent = button.dataset.title;
+            modalDescription.textContent = button.dataset.text;
+            modalIcon.textContent = symbol.textContent;
+
+            const visualClass = [...visual.classList].find(name =>
+                name.startsWith("visual-")
+            );
+
+            modalVisual.className = "modal-visual";
+
+            if (visualClass) {
+                modalVisual.classList.add(visualClass);
+            }
+
+            articleModal.classList.add("show");
+            document.body.style.overflow = "hidden";
+        });
+    });
+
+    function closeArticleModal() {
+        articleModal.classList.remove("show");
+        document.body.style.overflow = "";
+    }
+
+    closeModal.addEventListener("click", closeArticleModal);
+
+    articleModal.addEventListener("click", event => {
+        if (event.target === articleModal) {
+            closeArticleModal();
+        }
+    });
+
+    document.addEventListener("keydown", event => {
+        if (event.key === "Escape") {
+            closeArticleModal();
+        }
+    });
+</script>
+
+</body>
+</html>

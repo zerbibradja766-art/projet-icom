@@ -1,0 +1,184 @@
+[
+  {
+    "id": 0,
+    "img": "img/product/0..jpg",
+    "name": "TOWEL",
+    "price": 350,
+    "catetory":"accessories"
+  },
+  {
+    "id": 1,
+    "img": "img/product/1..jpg",
+    "name": "GLOVES",
+    "price": 280,
+    "catetory":"Sports"
+  },
+  {
+    "id": 2,
+    "img": "img/product/2..jpg",
+    "name": "FOOT PROTECTOR",
+    "price": 400,
+    "catetory":"accessories"
+  },
+  {
+    "id": 3,
+    "img": "img/product/3..jpg",
+    "name": "SPORTS CAP",
+    "price": 530,
+    "catetory":"Sports"
+  },
+  {
+    "id": 4,
+    "img": "img/product/4..jpg",
+    "name": "KEY HOLDER",
+    "price": 250,
+    "catetory":"accessories"
+  },
+  {
+    "id": 5,
+    "img": "img/product/5..jpg",
+    "name": " BAGS",
+    "price": 280,
+    "catetory":"Sports"
+  },
+  {
+    "id": 6,
+    "img": "img/product/6..jpg",
+    "name": "WATER BOTTLES",
+    "price": 220,
+    "old_price": 300,
+    "catetory":"equipement"
+  },
+  {
+    "id": 7,
+    "img": "img/product/7..jpg",
+    "name": "SOCKS",
+    "price": 370,
+    "catetory":"Sports"
+  },
+  {
+    "id": 8,
+    "img": "img/product/8..jpg",
+    "name": "NOTE BOOK",
+    "price": 320,
+    "catetory":"accessories"
+  },
+  {
+    "id": 9,
+    "img": "img/product/9..jpg",
+    "name": "THE COACH'S CUP",
+    "price": 80,
+    "old_price": 100,
+    "catetory":"accessories"
+  },
+  {
+    "id": 10,
+    "img": "img/product/10..jpg",
+    "name": "elastic band sport",
+    "price": 300,
+    "catetory":"equipement"
+  },
+  {
+    "id": 11,
+    "img": "img/product/11..jpg",
+    "name": "elastic band sport",
+    "price": 260,
+    "old_price": 300,
+    "catetory":"equipement"
+  },
+  {
+    "id": 12,
+    "img": "img/product/12..jpg",
+    "name": "FULL BODY MASSAGE",
+    "price": 370,
+    "catetory":"equipement"
+  },
+  {
+    "id": 13,
+    "img": "img/product/13..jpg",
+    "name": "KNEE PROTECTOR",
+    "price": 490,
+    "catetory":"equipement"
+  },
+  {
+    "id": 14,
+    "img": "img/product/14..jpg",
+    "name": "WEIGHTLIFTER",
+    "price": 340,
+    "catetory":"equipement"
+  },
+  {
+    "id": 15,
+    "img": "img/product/15..jpg",
+    "name": "SMALL BAG",
+    "price": 240,
+    "old_price": 300,
+    "catetory":"equipement"
+  },
+  {
+    "id": 16,
+    "img": "img/product/16..jpg",
+    "name": "BACK PROTECTOR",
+    "price": 600,
+    "old_price": 700,
+    "catetory":"equipement"
+  },
+  {
+    "id": 17,
+    "img": "img/product/17..jpg",
+    "name": "HAND GRIP ASSIST",
+    "price": 185,
+    "catetory":"equipement"
+  },
+  {
+    "id": 18,
+    "img": "img/product/18..jpg",
+    "name": "LEGGINGS",
+    "price": 225,
+    "catetory":"Sports"
+  },
+  {
+    "id": 19,
+    "img": "img/product/19..jpg",
+    "name": "2PC MAN",
+    "price": 140,
+    "catetory":"Sports"
+  },
+  {
+    "id": 20,
+    "img": "img/product/20..jpg",
+    "name": "1PC MAN",
+    "price": 280,
+    "old_price": 330,
+    "catetory":"Sports"
+  },
+  {
+    "id": 21,
+    "img": "img/product/21..jpg",
+    "name": "PLAN STAND",
+    "price": 350,
+    "catetory":"accessories"
+  },
+  {
+    "id": 22,
+    "img": "img/product/22..jpg",
+    "name": "JUMP ROPE ",
+    "price": 580,
+    "catetory":"equipement"
+  },
+  {
+    "id": 23,
+    "img": "img/product/23..jpg",
+    "name": "SMALL BAG",
+    "price": 400,
+    "catetory":"Sports"
+  },
+  {
+    "id": 24,
+    "img": "img/product/24..png",
+    "name": "BASKET",
+    "price": 300,
+    "old_price": 380,
+    "catetory":"Sports"
+  }
+]

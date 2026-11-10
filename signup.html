@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADJA | Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="page-container">
+        <div class="login-card">
+            <div class="logo">RADJA<span>.</span></div>
+            <h1>Create Account</h1>
+            <p class="subtitle">Join us and create your account</p>
+            <form id="signupForm">
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname"
+                           placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                           placeholder="Enter your email" required>
+                </div>
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone"
+                           placeholder="Enter your phone number"
+                           required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password"
+                           placeholder="Create a password" required>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword"
+                           placeholder="Confirm your password" required>
+                </div>
+                <label class="remember">
+                    <input type="checkbox" id="terms" required>
+                    <span>I agree to the Terms and Conditions</span>
+                </label>
+                <button type="submit" class="login-button">
+                    Create Account
+                </button>
+                <p id="message"></p>
+
+            </form>
+            <div class="signup-text">
+                Already have an account?
+                <a href="index1.html">Sign In</a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        const form = document.getElementById("signupForm");
+        const message = document.getElementById("message");
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+            const fullname = document.getElementById("fullname").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+
+            if (!fullname || !email || !phone || !password || !confirmPassword) {
+                message.textContent = "Please fill in all fields.";
+                message.className = "error";
+                return;
+            }
+
+            if (password.length < 8) {
+                message.textContent = "Password must contain at least 8 characters.";
+                message.className = "error";
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                message.textContent = "Passwords do not match.";
+                message.className = "error";
+                return;
+            }
+
+            if (!document.getElementById("terms").checked) {
+                message.textContent = "Please accept the Terms and Conditions.";
+                message.className = "error";
+                return;
+            }
+
+            message.textContent = "Account created successfully!";
+            message.className = "success";
+
+            form.reset();
+        });
+    </script>
+
+</body>
+</html>

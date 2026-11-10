@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RADJA | Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+
+  <div class="circle">
+    <form class="login" id="loginForm" novalidate>
+      <h1>Welcome Back!</h1>
+      <p class="subtitle">Login to your account</p>
+
+      <label class="field" id="userField">
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.4 0-8 2.2-8 5v3h16v-3c0-2.8-3.6-5-8-5z" />
+        </svg>
+        <input type="text" id="username" placeholder="Username" autocomplete="username">
+      </label>
+
+      <label class="field" id="passField">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M18 8h-1V6a5 5 0 0 0-10 0v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2zM9 6a3 3 0 0 1 6 0v2H9V6z" />
+        </svg>
+        <input type="password" id="password" placeholder="Password" autocomplete="current-password">
+      </label>
+
+      <div class="options">
+        <label class="remember">
+          <input type="checkbox" id="remember">
+          <span class="switch"></span>
+          Remember me
+        </label>
+        <a href="#" id="forgotPassword">Forgot password?</a>
+      </div>
+
+      <button type="submit">
+        SIGN IN
+      </button>
+      <p class="message" id="message" role="alert"></p>
+      <p class="signup">
+        Don't have an account?
+        <a href="signup.html">Sign up</a>
+      </p>
+
+      <a href="index.html" class="back-home">
+        ← Back to Home
+      </a>
+    </form>
+  </div>
+
+  <script>
+    (function () {
+
+      const loginFormEl = document.getElementById("loginForm");
+      const usernameInput = document.getElementById("username");
+      const passwordInput = document.getElementById("password");
+
+      const userFieldEl = document.getElementById("userField");
+      const passFieldEl = document.getElementById("passField");
+
+      const loginMessageEl = document.getElementById("message");
+
+      loginFormEl.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+        const usernameValue = usernameInput.value.trim();
+        const passwordValue = passwordInput.value;
+
+        userFieldEl.classList.toggle("error", !usernameValue);
+        passFieldEl.classList.toggle("error", !passwordValue);
+
+        loginMessageEl.className = "message";
+
+        if (!usernameValue || !passwordValue) {
+          loginMessageEl.textContent =
+            "Please enter your username and password.";
+          return;
+        }
+
+        if (passwordValue.length < 6) {
+          passFieldEl.classList.add("error");
+
+          loginMessageEl.textContent =
+            "Password must be at least 6 characters.";
+          return;
+        }
+
+        loginMessageEl.classList.add("ok");
+        loginMessageEl.textContent =
+          "Signed in successfully!";
+
+      });
+
+      [usernameInput, passwordInput].forEach(function (inputElement) {
+
+        inputElement.addEventListener("input", function () {
+
+          inputElement.closest(".field").classList.remove("error");
+          loginMessageEl.textContent = "";
+          loginMessageEl.className = "message";
+
+        });
+
+      });
+
+      document.getElementById("forgotPassword").addEventListener("click", function (event) {
+        event.preventDefault();
+        loginMessageEl.className = "message";
+        loginMessageEl.textContent = "Please contact support to reset your password.";
+      });
+
+    })();
+  </script>
+
+</body>
+
+</html>
